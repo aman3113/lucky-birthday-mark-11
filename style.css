@@ -10,7 +10,6 @@
 header {
   width: 100%;
   padding: 20px;
-  font-size: 2rem;
   text-align: center;
   background: rgb(95, 8, 188);
   color: white;
@@ -32,31 +31,25 @@ body,
 
 section {
   width: 700px;
-  max-width: 80%;
   padding: 20px;
-  /* border: 3px solid green; */
 }
 
 div {
   padding: 20px;
   width: 100%;
-  /* border: 2px solid blue; */
 }
 
 label {
   display: block;
   margin-bottom: 10px;
-  font-size: 1.5rem;
 }
 
 input {
   width: 100%;
   padding: 10px;
-  font-size: 20px;
 }
 
 button {
-  width: 20%;
   padding: 5px 10px;
   font-size: 20px;
   cursor: pointer;
@@ -69,7 +62,44 @@ button:hover {
 }
 
 textarea {
-  width: 60%;
   padding: 20px;
   font-size: 25px;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    font-size: 1.5rem;
+  }
+  button {
+    width: 45%;
+  }
+  input,
+  label {
+    font-size: 1rem;
+  }
+  section {
+    width: 98%;
+  }
+  textarea {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  header {
+    font-size: 3rem;
+  }
+  button {
+    width: 20%;
+  }
+  input,
+  label {
+    font-size: 1.5rem;
+  }
+  section {
+    width: 80%;
+  }
+  textarea {
+    width: 60%;
+  }
 }
